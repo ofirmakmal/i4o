@@ -4,7 +4,7 @@ IP.i4o - Index for objects
 IP.i4o (index for objects) enhances the i4o library (<https://github.com/ericksoa/i4o>) from which it was forked. This library was renamed as well in order to prevent confusion if, for example, both this and the original were to appear on NuGet.
 
 ## Project
-[ipashchuk.github.com/IP.i4o](http://ipashchuk.github.com/IP.i4o)
+* [ipashchuk.github.com/IP.i4o](http://ipashchuk.github.com/IP.i4o)
 
 ## Key Features
 
@@ -25,7 +25,7 @@ LINQ queries with equality index: **O(1)**</pre>
 
 ## Milestones/issues
 
-* [github.com/ipashchuk/IP.i4o/issues>](https://github.com/ipashchuk/IP.i4o/issues)
+* [github.com/ipashchuk/IP.i4o/issues](https://github.com/ipashchuk/IP.i4o/issues)
 
 ## How to get it
 
