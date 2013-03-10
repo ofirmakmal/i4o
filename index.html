@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="IP.i4o : Indexes for Objects" />
+    <meta name="description" content="IP.i4o : Indexes for Objects (LINQ query optimization)" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/ipashchuk/IP.i4o">View on GitHub</a>
 
           <h1 id="project_title">IP.i4o</h1>
-          <h2 id="project_tagline">Indexes for Objects</h2>
+          <h2 id="project_tagline">Indexes for Objects (LINQ query optimization)</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/ipashchuk/IP.i4o/zipball/master">Download this project as a .zip file</a>
@@ -37,9 +37,9 @@
 
 <h2>Project</h2>
 
-<p><a href="http://ipashchuk.github.com/IP.i4o">ipashchuk.github.com/IP.i4o</a></p>
-
-<h2>Key Features</h2>
+<ul>
+<li><a href="http://ipashchuk.github.com/IP.i4o">ipashchuk.github.com/IP.i4o</a></li>
+</ul><h2>Key Features</h2>
 
 <ul>
 <li>Allows indexes to be added to collections to optimize LINQ queries since, by default, LINQ queries collection items sequentially. Specifically, this is achieved by adding either a comparison or an equality index, which have O(log n) or O(1) operation, respectively.
@@ -47,20 +47,28 @@
 LINQ queries with comparison index: <strong>O(log n)</strong>
 LINQ queries with equality index: <strong>O(1)</strong></pre>
 </li>
-</ul><h2>Enhancements/changes to i4o</h2>
+</ul><h3>Enhancements/changes to i4o</h3>
 
 <ul>
 <li>Optimized inefficient index queries whereby the binary search was performed twice: first to check if the key existed and again to look up the key/value</li>
-<li>Removed c5 collections dependency/source code (it was used by i40 primarily for its red-black tree implementation and helper methods for selecting ranges) in favor of the .NET built-in generic <code>SortedList&lt;TKey,TValue&gt;</code>.</li>
+<li>Removed c5 collections dependency/source code (it was used by i40 primarily for its red-black tree implementation and helper methods for selecting ranges) in favor of the .NET built-in generic <code>SortedList&lt;TKey,TValue&gt;</code> (the range selection functionality was implemented via <code>SortedList&lt;TKey,TValue&gt;</code> extension methods).</li>
 <li>Removed Silverlight projects -- this is mainly because I'm not developing anything for Silverlight at the moment and do not want to spend time maintaining it.</li>
-</ul><h2>How to Build</h2>
+</ul><h2>Documentation</h2>
 
-<p>To be completed</p>
+<ul>
+<li><a href="https://github.com/ipashchuk/IP.i4o/wiki">github.com/ipashchuk/IP.i4o/wiki</a></li>
+</ul><h2>Milestones/issues</h2>
 
-<h2>License</h2>
+<ul>
+<li><a href="https://github.com/ipashchuk/IP.i4o/issues">github.com/ipashchuk/IP.i4o/issues</a></li>
+</ul><h2>How to get it</h2>
 
-<p>GNU Lesser General Public License (LGPL)
-Version 3.0, 29 June 2007</p>
+<ul>
+<li>A beta should soon be available on NuGet.</li>
+<li>Download/fork the source and build.</li>
+</ul><h2>License</h2>
+
+<p>GNU Lesser General Public License (LGPL), Version 3.0, 29 June 2007</p>
       </section>
     </div>
 
