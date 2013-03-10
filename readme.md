@@ -13,17 +13,21 @@ IP.i4o (index for objects) enhances the i4o library (<https://github.com/erickso
 LINQ queries with comparison index: **O(log n)**
 LINQ queries with equality index: **O(1)**</pre>
 
-## Enhancements/changes to i4o
+### Enhancements/changes to i4o
 
 * Optimized inefficient index queries whereby the binary search was performed twice: first to check if the key existed and again to look up the key/value
-* Removed c5 collections dependency/source code (it was used by i40 primarily for its red-black tree implementation and helper methods for selecting ranges) in favor of the .NET built-in generic `SortedList<TKey,TValue>`.
+* Removed c5 collections dependency/source code (it was used by i40 primarily for its red-black tree implementation and helper methods for selecting ranges) in favor of the .NET built-in generic `SortedList<TKey,TValue>` (the range selection functionality was implemented via `SortedList<TKey,TValue>` extension methods).
 * Removed Silverlight projects -- this is mainly because I'm not developing anything for Silverlight at the moment and do not want to spend time maintaining it.
 
-## How to Build
+## Milestones/issues
 
-To be completed
+* <https://github.com/ipashchuk/IP.i4o/issues>
+
+## How to get it
+
+* A beta should soon be available on NuGet.
+* Download/fork the source and build.
 
 ## License
 
-GNU Lesser General Public License (LGPL)
-Version 3.0, 29 June 2007
+GNU Lesser General Public License (LGPL), Version 3.0, 29 June 2007
