@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>I4o</title>
+  <meta name="description" content="Indexes for Objects">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">I4o</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Indexes for Objects</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/ipashchuk/i4o/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/ipashchuk/i4o/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/ipashchuk/i4o" class="code">View I4o on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>IP.i4o - Index for objects</h1>
+
+<p>IP.i4o (index for objects) enhances the i4o library (<a href="https://github.com/ericksoa/i4o">https://github.com/ericksoa/i4o</a> from which it was forked. This library was renamed as well in order to prevent confusion if, for example, both this and the original were to appear on NuGet.</p>
+
+<h2>Key Features</h2>
+
+<ul>
+<li>Allows indexes to be added to collections to optimize LINQ queries since, by default, LINQ queries collection items sequentially.</li>
+</ul><h2>Enhancements/changes to i4o</h2>
+
+<ul>
+<li>Optimized inefficient index queries whereby the binary search was performed twice: first to check if the key existed and again to look up the key/value</li>
+<li>Removed c5 collections dependency/source code (mainly the red-black tree implementation was used) in favor of the .NET built-in generic SortedList </li>
+<li>Removed Silverlight projects -- this is mainly because I'm not developing anything for Silverlight at the moment and do not want to spend time maintaining it</li>
+</ul><h2>How to Build</h2>
+
+<p>To be completed</p>
+
+<h2>License</h2>
+
+<p>GNU Lesser General Public License (LGPL)
+Version 3.0, 29 June 2007</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/ipashchuk" class="avatar"><img src="https://secure.gravatar.com/avatar/5aab63a7bfb46b4afa508e876bdb4217?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/ipashchuk">ipashchuk</a> maintains <a href="https://github.com/ipashchuk/i4o">I4o</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/ipashchuk/i4o/tarball/master" class="tar">tar</a><a href="https://github.com/ipashchuk/i4o/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
