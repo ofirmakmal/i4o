@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i4o", "i4o\i4o.csproj", "{9A3BD7C7-F8EE-4312-AD67-EF0BD133CB20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP.i4o", "IP.i4o\IP.i4o.csproj", "{9A3BD7C7-F8EE-4312-AD67-EF0BD133CB20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i4o.Tests", "i4o.Tests\i4o.Tests.csproj", "{1B3D03CE-E906-4AFB-B8C2-1F9AC7114FBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP.i4o.Tests", "IP.i4o.Tests\IP.i4o.Tests.csproj", "{1B3D03CE-E906-4AFB-B8C2-1F9AC7114FBB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2F8491D0-C5AE-4996-93E5-30413FBDB3D5}"
 	ProjectSection(SolutionItems) = preProject

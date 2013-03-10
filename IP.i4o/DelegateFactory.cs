@@ -2,9 +2,9 @@
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace i4o
+namespace IP.i4o
 {
-	namespace i4o
+	namespace IP.i4o
 	{
 		/*
 		 * The DelegateFactory was pulled from this great post by Nate Kohari

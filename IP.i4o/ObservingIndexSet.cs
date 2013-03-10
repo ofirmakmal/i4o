@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 
-namespace i4o
+namespace IP.i4o
 {
 	public class ObservingIndexSet<T> : IndexSet<T> where T : INotifyPropertyChanged
 	{

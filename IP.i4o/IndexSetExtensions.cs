@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace i4o
+namespace IP.i4o
 {
 	public static class IndexSetExtensions
 	{

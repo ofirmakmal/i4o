@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 
-namespace i4o.Tests
+namespace IP.i4o.Tests
 {
 	public class ObservableObject : INotifyPropertyChanged
 	{
@@ -79,9 +79,9 @@ namespace i4o.Tests
 		public void EquatableIndexLookupResolves()
 		{
 			SimpleClass[] someItems = {
-                                new SimpleClass {Name = "Jason", Age = 25},
-                                new SimpleClass {Name = "Aaron", Age = 37}
-                            };
+																new SimpleClass {Name = "Jason", Age = 25},
+																new SimpleClass {Name = "Aaron", Age = 37}
+														};
 			var indexOnSomeItems =
 					new EqualityIndex<SimpleClass>(
 							someItems,
@@ -94,9 +94,9 @@ namespace i4o.Tests
 		public void EquatableIndexLookupWithComplexRightConditionResolves()
 		{
 			SimpleClass[] someItems = {
-                                new SimpleClass {Name = "Jason", Age = 25},
-                                new SimpleClass {Name = "Aaron", Age = 37}
-                            };
+																new SimpleClass {Name = "Jason", Age = 25},
+																new SimpleClass {Name = "Aaron", Age = 37}
+														};
 			var indexOnSomeItems =
 					new EqualityIndex<SimpleClass>(
 							someItems,
@@ -109,11 +109,11 @@ namespace i4o.Tests
 		public void ComparableIndexLookupWithLessThan()
 		{
 			SimpleClass[] someItems = {
-                                new SimpleClass {Name = "Jason", Age = 25},
-                                new SimpleClass {Name = "Aaron", Age = 37},
-                                new SimpleClass {Name = "Erin", Age=34},
-                                new SimpleClass {Name = "Adriana", Age=13},
-                            };
+																new SimpleClass {Name = "Jason", Age = 25},
+																new SimpleClass {Name = "Aaron", Age = 37},
+																new SimpleClass {Name = "Erin", Age=34},
+																new SimpleClass {Name = "Adriana", Age=13},
+														};
 			var indexOnSomeItems =
 					new ComparisonIndex<SimpleClass, int>(
 							someItems,
@@ -126,11 +126,11 @@ namespace i4o.Tests
 		public void ComparableIndexLookupWithLessThanOrEqualTo()
 		{
 			SimpleClass[] someItems = {
-                                new SimpleClass {Name = "Jason", Age = 25},
-                                new SimpleClass {Name = "Aaron", Age = 37},
-                                new SimpleClass {Name = "Erin", Age=34},
-                                new SimpleClass {Name = "Adriana", Age=13},
-                            };
+																new SimpleClass {Name = "Jason", Age = 25},
+																new SimpleClass {Name = "Aaron", Age = 37},
+																new SimpleClass {Name = "Erin", Age=34},
+																new SimpleClass {Name = "Adriana", Age=13},
+														};
 			var indexOnSomeItems =
 					new ComparisonIndex<SimpleClass, int>(
 							someItems,
@@ -143,11 +143,11 @@ namespace i4o.Tests
 		public void ComparableIndexLookupWithGreaterThan()
 		{
 			SimpleClass[] someItems = {
-                                new SimpleClass {Name = "Jason", Age = 25},
-                                new SimpleClass {Name = "Aaron", Age = 37},
-                                new SimpleClass {Name = "Erin", Age=34},
-                                new SimpleClass {Name = "Adriana", Age=13},
-                            };
+																new SimpleClass {Name = "Jason", Age = 25},
+																new SimpleClass {Name = "Aaron", Age = 37},
+																new SimpleClass {Name = "Erin", Age=34},
+																new SimpleClass {Name = "Adriana", Age=13},
+														};
 			var indexOnSomeItems =
 					new ComparisonIndex<SimpleClass, int>(
 							someItems,
@@ -160,11 +160,11 @@ namespace i4o.Tests
 		public void ComparableIndexLookupWithGreaterThanOrEqualTo()
 		{
 			SimpleClass[] someItems = {
-                                new SimpleClass {Name = "Jason", Age = 25},
-                                new SimpleClass {Name = "Aaron", Age = 37},
-                                new SimpleClass {Name = "Erin", Age=34},
-                                new SimpleClass {Name = "Adriana", Age=13},
-                            };
+																new SimpleClass {Name = "Jason", Age = 25},
+																new SimpleClass {Name = "Aaron", Age = 37},
+																new SimpleClass {Name = "Erin", Age=34},
+																new SimpleClass {Name = "Adriana", Age=13},
+														};
 			var indexOnSomeItems =
 					new ComparisonIndex<SimpleClass, int>(
 							someItems,
@@ -177,11 +177,11 @@ namespace i4o.Tests
 		public void BuilderReturnsComparisonIndexForComparable()
 		{
 			SimpleClass[] someItems = {
-                                new SimpleClass {Name = "Jason", Age = 25},
-                                new SimpleClass {Name = "Aaron", Age = 37},
-                                new SimpleClass {Name = "Erin", Age=34},
-                                new SimpleClass {Name = "Adriana", Age=13},
-                            };
+																new SimpleClass {Name = "Jason", Age = 25},
+																new SimpleClass {Name = "Aaron", Age = 37},
+																new SimpleClass {Name = "Erin", Age=34},
+																new SimpleClass {Name = "Adriana", Age=13},
+														};
 			var theRightIndex
 					= IndexBuilder.GetIndexFor(
 							someItems,
@@ -194,11 +194,11 @@ namespace i4o.Tests
 		public void BuilderReturnsEqualityIndexForNotComparable()
 		{
 			SimpleClass[] someItems = {
-                                new SimpleClass {Name = "Jason", Age = 25},
-                                new SimpleClass {Name = "Aaron", Age = 37, FavoriteColor=Color.Green},
-                                new SimpleClass {Name = "Erin", Age=34},
-                                new SimpleClass {Name = "Adriana", Age=13},
-                            };
+																new SimpleClass {Name = "Jason", Age = 25},
+																new SimpleClass {Name = "Aaron", Age = 37, FavoriteColor=Color.Green},
+																new SimpleClass {Name = "Erin", Age=34},
+																new SimpleClass {Name = "Adriana", Age=13},
+														};
 			var theRightIndex
 					= IndexBuilder.GetIndexFor(
 							someItems,
@@ -211,11 +211,11 @@ namespace i4o.Tests
 		public void ComplexQuery()
 		{
 			SimpleClass[] someItems = {
-                                          new SimpleClass {Name = "Jason", Age = 25},
-                                          new SimpleClass {Name = "Aaron", Age = 37, FavoriteColor = Color.Green},
-                                          new SimpleClass {Name = "Erin", Age = 34},
-                                          new SimpleClass {Name = "Adriana", Age = 13},
-                                      };
+																					new SimpleClass {Name = "Jason", Age = 25},
+																					new SimpleClass {Name = "Aaron", Age = 37, FavoriteColor = Color.Green},
+																					new SimpleClass {Name = "Erin", Age = 34},
+																					new SimpleClass {Name = "Adriana", Age = 13},
+																			};
 			var indexSpec = IndexSpecification<SimpleClass>.Build()
 					.With(person => person.FavoriteColor)
 					.And(person => person.Age);
@@ -231,11 +231,11 @@ namespace i4o.Tests
 		public void SuperComplexQuery()
 		{
 			SimpleClass[] someItems = {
-                                          new SimpleClass {Name = "Jason Jarett", Age = 25, FavoriteColor = Color.Aqua},
-                                          new SimpleClass {Name = "Aaron Erickson", Age = 37, FavoriteColor = Color.Green},
-                                          new SimpleClass {Name = "Erin Erickson", Age = 34, FavoriteColor = Color.Green},
-                                          new SimpleClass {Name = "Adriana Erickson", Age = 13, FavoriteColor = Color.Aqua},
-                                      };
+																					new SimpleClass {Name = "Jason Jarett", Age = 25, FavoriteColor = Color.Aqua},
+																					new SimpleClass {Name = "Aaron Erickson", Age = 37, FavoriteColor = Color.Green},
+																					new SimpleClass {Name = "Erin Erickson", Age = 34, FavoriteColor = Color.Green},
+																					new SimpleClass {Name = "Adriana Erickson", Age = 13, FavoriteColor = Color.Aqua},
+																			};
 			var indexSpec = IndexSpecification<SimpleClass>.Build()
 					.With(person => person.FavoriteColor)
 					.And(person => person.Age)

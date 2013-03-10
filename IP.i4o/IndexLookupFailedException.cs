@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace i4o
+namespace IP.i4o
 {
 	public class IndexLookupFailedException : Exception
 	{

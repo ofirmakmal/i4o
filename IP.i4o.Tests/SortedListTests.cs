@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace i4o.Tests
+namespace IP.i4o.Tests
 {
 	[TestFixture(Description = "SortedList Tests")]
 	public class SortedListTests

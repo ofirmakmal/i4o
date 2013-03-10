@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace i4o.Tests
+namespace IP.i4o.Tests
 {
 	[TestFixture]
 	public class PropertyReaderTests
@@ -114,10 +114,10 @@ namespace i4o.Tests
 			public static PropertyReadStrategy WhoWasGenerallyFaster(IEnumerable<IndexReadTimingResult> testSamples)
 			{
 				var statSummary = new Dictionary<PropertyReadStrategy, int>
-                                      {
-                                          {PropertyReadStrategy.Reflection, 0},
-                                          {PropertyReadStrategy.DelegateMethod, 0}
-                                      };
+																			{
+																					{PropertyReadStrategy.Reflection, 0},
+																					{PropertyReadStrategy.DelegateMethod, 0}
+																			};
 
 				foreach (var stat in testSamples)
 				{

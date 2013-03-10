@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 
-namespace i4o
+namespace IP.i4o
 {
 	public static class IndexBuilder
 	{
@@ -41,7 +41,7 @@ namespace i4o
 		{
 			return (IIndex<TChild>)
 						 Activator.CreateInstance(
-								 Type.GetType("i4o.ComparisonIndex`2").MakeGenericType(new[] { typeof(TChild), propertyInfo.PropertyType }),
+								 Type.GetType("IP.i4o.ComparisonIndex`2").MakeGenericType(new[] { typeof(TChild), propertyInfo.PropertyType }),
 								 new object[] { enumerable, propertyInfo }
 								 );
 		}

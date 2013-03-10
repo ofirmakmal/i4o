@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace i4o
+namespace IP.i4o
 {
 	public class EqualityIndex<TChild> : IIndex<TChild>
 	{

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace i4o
+namespace IP.i4o
 {
 	internal static class SortedListExtensions
 	{

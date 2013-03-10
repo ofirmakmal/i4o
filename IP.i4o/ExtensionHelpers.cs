@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq.Expressions;
 
-namespace i4o
+namespace IP.i4o
 {
 	internal static class ExtensionHelpers
 	{

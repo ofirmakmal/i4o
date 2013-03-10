@@ -1,4 +1,4 @@
-namespace i4o.Tests
+namespace IP.i4o.Tests
 {
 	using NUnit.Framework;
 	using System;
