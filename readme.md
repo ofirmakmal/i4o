@@ -19,9 +19,13 @@ LINQ queries with equality index: **O(1)**</pre>
 * Removed c5 collections dependency/source code (it was used by i40 primarily for its red-black tree implementation and helper methods for selecting ranges) in favor of the .NET built-in generic `SortedList<TKey,TValue>` (the range selection functionality was implemented via `SortedList<TKey,TValue>` extension methods).
 * Removed Silverlight projects -- this is mainly because I'm not developing anything for Silverlight at the moment and do not want to spend time maintaining it.
 
+## Documentation
+
+* [github.com/ipashchuk/IP.i4o/wiki](https://github.com/ipashchuk/IP.i4o/wiki)
+
 ## Milestones/issues
 
-* <https://github.com/ipashchuk/IP.i4o/issues>
+* [github.com/ipashchuk/IP.i4o/issues>](https://github.com/ipashchuk/IP.i4o/issues)
 
 ## How to get it
 
