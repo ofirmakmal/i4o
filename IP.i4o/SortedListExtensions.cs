@@ -2,18 +2,21 @@
 
 namespace IP.i4o
 {
+	/// <summary>
+	/// Extensions class for the generic SortedList.
+	/// </summary>
 	internal static class SortedListExtensions
 	{
 		/// <summary>
 		/// This is an optimized implementation of IndexOfKey method to return the index of the key equal to
 		/// or the first index greater than the specified key.
 		/// </summary>
-		/// <typeparam name="TKey"></typeparam>
-		/// <typeparam name="TValue"></typeparam>
-		/// <param name="sortedList"></param>
-		/// <param name="key"></param>
-		/// <param name="index"></param>
-		/// <returns></returns>
+		/// <typeparam name="TKey">The key type.</typeparam>
+		/// <typeparam name="TValue">The value type.</typeparam>
+		/// <param name="sortedList">The sorted list to search.</param>
+		/// <param name="key">The key to look up.</param>
+		/// <param name="index">The index of the key equal to or the first index greater than the specified key.</param>
+		/// <returns>true if the key was found; otherwise, false.</returns>
 		internal static bool TryFindIndex<TKey, TValue>(this SortedList<TKey, TValue> sortedList, TKey key, out int index)
 		{
 			var comparer = sortedList.Comparer;
