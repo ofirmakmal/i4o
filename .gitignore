@@ -9,3 +9,5 @@ TestResult.xml
 *.csproj.user
 *.sqp
 *~
+
+packages\FluentAssertions*/
