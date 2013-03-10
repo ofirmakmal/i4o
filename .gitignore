@@ -10,4 +10,4 @@ TestResult.xml
 *.sqp
 *~
 
-packages\FluentAssertions*/
+packages/
