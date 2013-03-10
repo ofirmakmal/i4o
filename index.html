@@ -35,10 +35,14 @@
 
 <p>IP.i4o (index for objects) enhances the i4o library (<a href="https://github.com/ericksoa/i4o">https://github.com/ericksoa/i4o</a>) from which it was forked. This library was renamed as well in order to prevent confusion if, for example, both this and the original were to appear on NuGet.</p>
 
+<h2>Project</h2>
+
+<p><a href="http://ipashchuk.github.com/IP.i4o">ipashchuk.github.com/IP.i4o</a></p>
+
 <h2>Key Features</h2>
 
 <ul>
-<li>Allows indexes to be added to collections to optimize LINQ queries since, by default, LINQ queries collection items sequentially. Specifically, this is achieved by adding either a comparison or an equality index, which provide O(log n) or O(1) search performance, respectively.
+<li>Allows indexes to be added to collections to optimize LINQ queries since, by default, LINQ queries collection items sequentially. Specifically, this is achieved by adding either a comparison or an equality index, which have O(log n) or O(1) operation, respectively.
 <pre>Standard (unoptimized) LINQ queries: <strong>O(n)</strong>
 LINQ queries with comparison index: <strong>O(log n)</strong>
 LINQ queries with equality index: <strong>O(1)</strong></pre>
