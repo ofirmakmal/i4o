@@ -5,13 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP.i4o", "IP.i4o\IP.i4o.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP.i4o.Tests", "IP.i4o.Tests\IP.i4o.Tests.csproj", "{1B3D03CE-E906-4AFB-B8C2-1F9AC7114FBB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2F8491D0-C5AE-4996-93E5-30413FBDB3D5}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{8EA50D46-DA09-4492-B46D-F9ABCC3D51D3}"
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
