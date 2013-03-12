@@ -28,12 +28,12 @@ namespace IP.i4o
 
 		private void DetachAllChildren()
 		{
-			_observableCollection.Each(DetachPropertyChanged);
+			_observableCollection.ForEach(DetachPropertyChanged);
 		}
 
 		private void AttachAllChildren()
 		{
-			_observableCollection.Each(AttachPropertyChanged);
+			_observableCollection.ForEach(AttachPropertyChanged);
 		}
 
 		private void SetupEventHandlers()
@@ -76,7 +76,7 @@ namespace IP.i4o
 
 		private void RemoveItems(IEnumerable oldItems)
 		{
-			oldItems.Cast<T>().Each(item =>
+			oldItems.Cast<T>().ForEach(item =>
 					{
 						DetachPropertyChanged(item);
 						IndexDictionary.Values.ToList().ForEach(index =>
@@ -87,7 +87,7 @@ namespace IP.i4o
 
 		private void AddItems(IEnumerable oldItems)
 		{
-			oldItems.Cast<T>().Each(item =>
+			oldItems.Cast<T>().ForEach(item =>
 					{
 						AttachPropertyChanged(item);
 						IndexDictionary.Values.ToList().ForEach(index =>

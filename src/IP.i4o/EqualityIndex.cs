@@ -17,7 +17,7 @@ namespace IP.i4o
 				PropertyInfo property)
 		{
 			_propertyReader = new PropertyReader<TChild>(property.Name);
-			collectionToIndex.Each(Add);
+			collectionToIndex.ForEach(Add);
 		}
 
 		public IEnumerator<TChild> GetEnumerator()

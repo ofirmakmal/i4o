@@ -22,11 +22,11 @@ namespace IP.i4o
 		{
 			IndexSpecification = indexSpecification;
 			SetupIndices(source);
-		}
+		}		
 
 		protected void SetupIndices(IEnumerable<T> source)
 		{
-			IndexSpecification.IndexedProperties.Each(
+			IndexSpecification.IndexedProperties.ForEach(
 					propName =>
 						IndexDictionary.Add(propName, IndexBuilder.GetIndexFor(source, typeof(T).GetProperty(propName)))
 			);
