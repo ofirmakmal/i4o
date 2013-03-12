@@ -48,7 +48,7 @@ namespace IP.i4o
 
 		internal static bool Supports<T>(this Type type)
 		{
-			return type.GetInterfaces().Where(i => i == typeof(T)).Count() > 0;
+			return type.GetInterfaces().Any(i => i == typeof(T));
 		}
 	}
 }
