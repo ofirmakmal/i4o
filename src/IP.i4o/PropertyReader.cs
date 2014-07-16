@@ -43,7 +43,7 @@ namespace IP.i4o
 
 			var typeOfT = typeof(T);
 
-			_propertyInfo = typeOfT.GetProperty(propertyName);
+			_propertyInfo = typeOfT.GetProperty(propertyName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
 
 			if (_propertyInfo == null)
 				throw new ArgumentException("Could not find property name [{0}] on type [{1}]."
