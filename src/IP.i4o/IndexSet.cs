@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 
 namespace IP.i4o
 {
@@ -28,7 +29,7 @@ namespace IP.i4o
 		{
 			IndexSpecification.IndexedProperties.ForEach(
 					propName =>
-						IndexDictionary.Add(propName, IndexBuilder.GetIndexFor(source, typeof(T).GetProperty(propName)))
+						IndexDictionary.Add(propName, IndexBuilder.GetIndexFor(source, typeof(T).GetProperty(propName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance)))
 			);
 		}
 
