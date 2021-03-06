@@ -1,3 +1,5 @@
+**This project is not being supported anymore.  Please take a look at https://github.com/dotnetprojects/IndexedLinq that was forked from this project and is now available as a nuget package.**
+
 IP.i4o - Index for objects
 =======================
 
